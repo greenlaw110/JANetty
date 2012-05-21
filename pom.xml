@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.agilewiki.jactor</groupId>
+  <artifactId>janetty</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>JANetty</name>
+  <description>Remote actors with JActor over Netty</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.agilewiki.jactor</groupId>
+  		<artifactId>jactor</artifactId>
+  		<version>3.0.3</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.agilewiki.jid</groupId>
+  		<artifactId>jid</artifactId>
+  		<version>1.0.2</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.10</version>
+  		<scope>test</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>io.netty</groupId>
+  		<artifactId>netty</artifactId>
+  		<version>3.4.5.Final</version>
+  		<!-- <type>bundle</type> -->
+  	</dependency>
+  </dependencies>
+</project>
