@@ -2,6 +2,7 @@
 
 Remote actors with [JActor](https://github.com/laforge49/JActor) and [Netty](http://netty.io/)
 
+**This project is in pre-alpha state. Come back later.**
 
 ## Usage
 
