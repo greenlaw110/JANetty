@@ -9,12 +9,12 @@
   	<dependency>
   		<groupId>org.agilewiki.jactor</groupId>
   		<artifactId>jactor</artifactId>
-  		<version>3.0.3</version>
+  		<version>3.0.4</version>
   	</dependency>
   	<dependency>
   		<groupId>org.agilewiki.jid</groupId>
   		<artifactId>jid</artifactId>
-  		<version>1.0.2</version>
+  		<version>1.0.3</version>
   	</dependency>
   	<dependency>
   		<groupId>junit</groupId>
@@ -26,7 +26,6 @@
   		<groupId>io.netty</groupId>
   		<artifactId>netty</artifactId>
   		<version>3.4.5.Final</version>
-  		<!-- <type>bundle</type> -->
   	</dependency>
   </dependencies>
 </project>
