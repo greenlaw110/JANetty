@@ -16,15 +16,15 @@ public class JACom extends JLPCActor implements Com {
     @Override
     protected void processRequest(Object request, RP rp) throws Exception {
         Class reqClass = request.getClass();
-        if (RemoteRequest.class.isAssignableFrom(reqClass)) {
-            remoteRequest((RemoteRequest) request);
+        if (OutgoingRequest.class.isAssignableFrom(reqClass)) {
+            remoteRequest((OutgoingRequest) request);
             rp.processResponse(null);
             return;
         }
         throw new UnsupportedOperationException(reqClass.getName());
     }
 
-    protected void remoteRequest(RemoteRequest req) {
+    protected void remoteRequest(OutgoingRequest req) {
         channel.write(req);
     }
 
