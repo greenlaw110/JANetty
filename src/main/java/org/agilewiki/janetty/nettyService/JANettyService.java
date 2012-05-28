@@ -19,6 +19,8 @@ import java.util.concurrent.Executors;
 public class JANettyService extends JLPCActor implements NettyService {
 
     private Protocol1 protocol1;
+    private String remoteHost;
+    private int remotePort;
 
     public static final Map<String, Object> DEFAULT_OPTIONS = Collections
             .unmodifiableMap(new HashMap<String, Object>() {
@@ -46,6 +48,13 @@ public class JANettyService extends JLPCActor implements NettyService {
         if (this.protocol1 != null)
             throw new IllegalStateException("Attempt to change the protocol1 actor");
         this.protocol1 = protocol1;
+    }
+
+    public void setRemoteAddress(String remoteHost, int remotePort) {
+        if (this.remoteHost != null)
+            throw new IllegalStateException("remote host and port can not be changed");
+        this.remoteHost = remoteHost;
+        this.remotePort = remotePort;
     }
 
     public ServerBootstrap startServer(int port, Map<String, Object> options) {
