@@ -12,11 +12,15 @@ TODO
 ## Getting in touch
 
 ###Shantanu Kumar
+
 On Twitter: [@kumarshantanu](https://twitter.com/#!/kumarshantanu)
+
 By Email: [kumar.shantanu at gmail dot com](mailto:kumar.shantanu@gmail.com)
 
 ###Bill la Forge
+
 On Twitter: [@laforge49](https://twitter.com/#!/laforge49)
+
 By Email: [laforge49 at gmail dot com](mailto:laforge49@gmail.com)
 
 
