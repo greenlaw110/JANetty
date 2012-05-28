@@ -10,12 +10,14 @@ public class IncomingRequest extends Request<Object, Protocol1> {
 
     public final String sourceHost;
     public final int SourcePort;
+    public final Com com;
     public final String sourceProtocolName;
     public final byte[] payload;
 
-    public IncomingRequest(String sourceHost, int SourcePort, String sourceProtocolName, byte[] payload) {
+    public IncomingRequest(String sourceHost, int SourcePort, Com com, String sourceProtocolName, byte[] payload) {
         this.sourceHost = sourceHost;
         this.SourcePort = SourcePort;
+        this.com = com;
         this.sourceProtocolName = sourceProtocolName;
         this.payload = payload;
     }
