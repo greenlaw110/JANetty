@@ -1,6 +1,8 @@
 package org.agilewiki.janetty;
 
 import org.agilewiki.jactor.Actor;
+import org.agilewiki.jactor.RP;
+import org.agilewiki.jactor.lpc.JLPCActor;
 import org.agilewiki.jactor.lpc.Request;
 
 public class OutgoingRequest extends Request<Object, Com> {
@@ -19,4 +21,9 @@ public class OutgoingRequest extends Request<Object, Com> {
         return targetActor instanceof Com;
     }
 
+    @Override
+    public void processRequest(JLPCActor targetActor, RP rp) throws Exception {
+        Com com = (Com) targetActor;
+        com.processRequest(this, rp);
+    }
 }

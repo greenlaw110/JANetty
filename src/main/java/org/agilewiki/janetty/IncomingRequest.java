@@ -1,6 +1,8 @@
 package org.agilewiki.janetty;
 
 import org.agilewiki.jactor.Actor;
+import org.agilewiki.jactor.RP;
+import org.agilewiki.jactor.lpc.JLPCActor;
 import org.agilewiki.jactor.lpc.Request;
 
 /**
@@ -27,4 +29,9 @@ public class IncomingRequest extends Request<Object, Protocol1> {
         return targetActor instanceof Protocol1;
     }
 
+    @Override
+    public void processRequest(JLPCActor targetActor, RP rp) throws Exception {
+        Protocol1 protocol1 = (Protocol1) targetActor;
+        protocol1.processRequest(this, rp);
+    }
 }
