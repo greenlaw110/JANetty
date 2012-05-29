@@ -3,6 +3,7 @@ package org.agilewiki.janetty.nettyService;
 import org.agilewiki.jactor.Mailbox;
 import org.agilewiki.jactor.RP;
 import org.agilewiki.jactor.lpc.JLPCActor;
+import org.agilewiki.janetty.Com;
 import org.agilewiki.janetty.Protocol1;
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.group.ChannelGroup;
@@ -68,12 +69,9 @@ public class JANettyService extends JLPCActor implements NettyService {
     }
 
     @Override
-    protected void processRequest(Object request, RP rp) throws Exception {
-        if (request instanceof CreateCom) {
-            // TODO return a Com object via `rp`
-        }
-        throw new UnsupportedOperationException(request.getClass().getName());
-
+    public void processRequest(CreateCom createCom, RP<Com> rp)
+            throws Exception {
+        // TODO return a Com object via `rp`
     }
 
 }
